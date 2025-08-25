@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hotel Form</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="icon" type="image/png" href="Images/HotelLogoGold.png">
+    </head>
+
+
+    <body>
+
+    <div class="background"></div>
+
+    <img src="Images/HotelLogo.png">
+        
+    <div class="form-box">
+        <form>
+
+        <h1 class="title">Hotel Booking & Airport Pickup Form</h1>
+        <hr class="title-hr">
+
+        <div class="guest-information"></div>
+            <h2>Guest Information</h2>
+
+                    <label class="required-label">Full Name</label>
+                    <br>
+                    <input type="text" placeholder="Surname, Firstname"required>
+                    <br>
+
+                    <label>Nationality</label>
+                    <br>
+                    <input type="text">
+                    <br>
+
+                    <label class="required-label">Email</label>
+                    <br>
+                    <input type="email" placeholder="e.g. youremail_123@gmail.com">
+                    <br>
+
+                    <label>Phone Number</label>
+                    <br>
+                    <input type="tel">
+                    <br>
+                    
+        <hr>
+        
+        <div class="flight-arrivalDetails"></div>
+            <h2>Flight and Arrival Details</h2>
+
+                    <label class="required-label">Flight Number </label>
+                    <br>
+                    <input type="text" required>
+                    <br>
+
+                    <label>Airline</label>
+                    <br>
+                    <input type="text">
+                    <br>
+
+                    <label>Arrival Date</label>
+                    <input type="date">
+                    <br>
+
+                    <label>Arrival Time : </label>
+                    <input type="time">
+                    <br>
+
+                    <label>Airport : </label>
+                    <select>
+                    <option>Suvarnabhumi Airport(BKK)</option>
+                    <option>Don Mueang International Airport(DMK)</option>
+                    <option>Other</option>
+                    </select>
+                    <br>
+                    <label class="label-other">If Other : </label>
+                    <input class="input-other" type="text">
+                    <br>
+                    
+                    <label>Number of Luggages : </label>
+                    <input class="num-input" type="number" min="0">
+                    <br>
+
+                    <label>Additional Notes</label>
+                    <br>
+                    <textarea id="message" name="message" rows="4" cols="50" 
+                    placeholder="Write any additional notes here...">
+                    </textarea>
+                    <br>                  
+        <hr>
+
+        <div class="hote-stayInformation"></div>
+            <h2>Hotel Stay Information</h2>
+
+                    <label>Hotel Name</label>
+                    <br>
+                    <input type="text">
+                    <br>
+
+                    <label>Hotel Address</label>
+                    <br>
+                    <textarea id="hotel-address" name="hotel-address" rows="2" cols="70">
+                    </textarea>
+                    <br>
+
+                    <label>Check-in Date</label>
+                    <br>
+                    <input type="date">
+                    <br>
+
+                    <label>Number of Nights : </label>
+                    <input class="num-input" type="number" min="1">
+                    <br>
+
+                    <label>Room Type</label>
+                    <br>
+                    <input type="text">
+                    <br>
+
+                    <label>Special Requests</label>
+                    <br>
+                    <textarea id="special-request" name="special-requests" rows="2" cols="70">
+                    </textarea>
+                    <br>
+        <hr>
+
+        <div class="Airport-pickupOptions"></div>
+            <h2>Airport Pickup Options</h2>
+
+                    <label>Do you need pickup?</label>
+                    <input type="radio" name="pickup">Yes
+                    <input type="radio" name="pickup">No                    
+                    <br>
+
+                    <label>Special Services : </label>
+                    <br>
+                    <input type="checkbox">Child Seat
+                    <input type="checkbox">Wheelchair Access
+                    <input type="checkbox">Tour Guide
+                    <input type="checkbox">Translator
+                    <input type="checkbox">SIM Card on Arrival
+                    <input type="checkbox">Other
+                    <br>
+                    <label class="label-other">If Other : </label>
+                    <input class="input-other" type="text">
+                    <br>
+            <hr>
+
+            <div class="driver-signageRequest"></div>
+                    <h2>Driver Signage Request</h2>
+
+                        <label>Message for Driver Signage</label>
+                        <textarea name="signage-request" rows="2" cols="70" placeholder="(e.g., “Ms. Maria Garcia – Bangkok Riverside Hotel”)">
+                        </textarea>
+                        <br>
+    </form>
+
+    <button>Submit</button>
+
+    </div>
+
+</body>
+
+</html>
